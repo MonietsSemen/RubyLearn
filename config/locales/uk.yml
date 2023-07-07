@@ -1,0 +1,15 @@
+uk:
+  hello: "Hello world"
+  header:
+    menu:
+      news: "Новини"
+      cooking: "Приготування"
+      roasting: "Обсмажка"
+      other: "Інше"
+      about: "Про проект"
+  global:
+    name: "KavaFans"
+    footer: ". Всі права захищені."
+  welcome:
+    heading: "KavaFans"
+    description: "Маєш настрій спробувати щось нове? Хочеш поділитись новим досвiдом? Хочеш оновити свої знання в кавi? Тоді, ласкаво просимо!"

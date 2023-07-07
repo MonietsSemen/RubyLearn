@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   get 'about', to: 'welcome#about'
-
+  get 'news', to: 'articles#news'
+  get 'cooking', to: 'articles#cooking'
+  get 'roasting', to: 'articles#roasting'
+  get 'other', to: 'articles#other'
 end

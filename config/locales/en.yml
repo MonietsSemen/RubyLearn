@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  global:
+    name: "KavaFans"
+    footer: ". All rights reserved."
+  welcome:
+    heading: "KavaFans"
+    description: "Are you in the mood to try something new? Do you want to share your new experience? Do you want to brush up on your coffee knowledge? Then welcome!"
+
