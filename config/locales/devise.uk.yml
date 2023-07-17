@@ -1,0 +1,7 @@
+uk:
+  devise:
+    sessions:
+      login: "Увійти"
+      sign_up: "Реєстрація"
+      sign_out: "Вихід"
+    profile: "Мій профіль"
