@@ -57,6 +57,9 @@
           </a>
           <ul class="dropdown-menu text-small">
             <li>
+              <%= link_to t('header.menu.addArticle'), new_article_path, class:"dropdown-item" %>
+            </li>
+            <li>
               <%= link_to t('devise.profile'), edit_user_registration_path, class:'dropdown-item' %>
             </li>
             <li><hr class="dropdown-divider"></li>

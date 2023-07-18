@@ -1,5 +1,4 @@
 uk:
-  hello: "Hello world"
   header:
     menu:
       news: "Новини"
@@ -7,9 +6,22 @@ uk:
       roasting: "Обсмажка"
       other: "Інше"
       about: "Про проект"
+      addArticle: "Додати статтю"
   global:
     name: "KavaFans"
     footer: ". Всі права захищені."
   welcome:
     heading: "KavaFans"
     description: "Маєш настрій спробувати щось нове? Хочеш поділитись новим досвiдом? Хочеш оновити свої знання в кавi? Тоді, ласкаво просимо!"
+  datetime:
+    distance_in_words:
+      x_days:
+        one: '1 день тому'
+        other: '%{count} дня тому'
+      about_x_hours:
+        one: '1 година тому'
+        other: '%{count} години тому'
+      less_than_x_minutes: 'Менше хвилини тому'
+      x_minutes:
+        one: '1 хвилину тому'
+        other: '%{count} хвилин тому'
