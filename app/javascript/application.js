@@ -2,14 +2,15 @@
 
 import "jquery"
 import "popper"
+import "@rails/actiontext"
+import "trix"
 import "bootstrap-sprockets"
-//import "@rails/actiontext"
-//import "trix"
 import "@hotwired/turbo-rails"
 import "controllers"
 
 $(document).ready(function() {
     console.log('jQuery is working!');
 });
+
 
 

@@ -12,3 +12,5 @@ pin "popper", to: "popper.js", preload: true
 pin "bootstrap-sprockets", to: "bootstrap-sprockets.js", preload: true
 
 
+pin "trix"
+pin "@rails/actiontext", to: "actiontext.js"
