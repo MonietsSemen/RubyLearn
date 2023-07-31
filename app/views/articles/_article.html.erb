@@ -1,7 +1,10 @@
 <div id="<%= dom_id article %>">
+<%= image_tag article.preview_img if article.preview_img.present? %>
+
+<h1 class="h2 text-center">
+<%= article.title %>
+</h1>
   <p>
-    <strong>Title:</strong>
-    <%= article.title %>
     <%= article.content %>
   </p>
 </div>
