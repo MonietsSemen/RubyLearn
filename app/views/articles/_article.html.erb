@@ -1,10 +1,10 @@
 <div id="<%= dom_id article %>">
-<%= image_tag article.preview_img if article.preview_img.present? %>
+  <div class="position-relative ">
+    <%= image_tag article.preview_img, class: "img-abs-cover" if article.preview_img.present?  %>
+  </div>
 
-<h1 class="h2 text-center">
-<%= article.title %>
-</h1>
-  <p>
-    <%= article.content %>
-  </p>
+  <h1 class="h2 text-center">
+    <%= article.title %>
+  </h1>
+  <p> <%= article.content %> </p>
 </div>

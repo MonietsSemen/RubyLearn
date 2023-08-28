@@ -1,8 +1,16 @@
-<%= render @article %>
+<div class="container">
+  <%= render @article %>
 
-<div>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", articles_path %>
+  <div class="row">
+    <div class="col-6">
+      <%= link_to t('article.buttons.back_to'), articles_path, class:"btn btn-secondary" %>
+    </div>
 
-  <%= button_to "Destroy this article", @article, method: :delete %>
+    <div class="col-6 d-flex justify-content-end column-gap-3">
+      <% if can? :manage, @article %>
+        <%= link_to t('article.buttons.edit'), edit_article_path(@article), class:"btn btn-secondary" %>
+        <%= button_to t('article.buttons.destroy'), @article, method: :delete, class:"btn btn-secondary" %>
+      <% end %>
+     </div>
+  </div>
 </div>

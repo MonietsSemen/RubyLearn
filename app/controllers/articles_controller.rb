@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles or /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.accessible_by(current_ability)
   end
 
   # GET /articles/1 or /articles/1.json
@@ -17,11 +17,12 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    authorize! :edit, @article
   end
 
   # POST /articles or /articles.json
   def create
-    @article = Article.new(article_params)
+    @article = current_user.articles.build(article_params)
 
     respond_to do |format|
       if @article.save

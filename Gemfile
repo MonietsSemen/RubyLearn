@@ -21,11 +21,13 @@ gem "bootsnap", require: false
 #HTML/CSS
 gem 'jquery-rails'
 gem 'bootstrap', '~> 5.3.0.alpha3'
+gem 'rails-i18n'
 
 #auth
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '1.0'
+gem 'cancancan' #відповідає за різні рівні доступів до контенту
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"

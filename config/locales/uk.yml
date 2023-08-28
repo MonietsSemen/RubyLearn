@@ -13,6 +13,23 @@ uk:
   welcome:
     heading: "KavaFans"
     description: "Маєш настрій спробувати щось нове? Хочеш поділитись новим досвiдом? Хочеш оновити свої знання в кавi? Тоді, ласкаво просимо!"
+  article:
+    edit_article_title: "Змінити статтю"
+    add_article_title: "Додати статтю"
+    fields:
+      title:
+        label: "Заголовок"
+        placeholder: "Ваш заголовок"
+      main_image: "Головне зображення"
+      main_content:
+        label: "Головний контент"
+        placeholder: "Тут має бути ваша стаття"
+    buttons:
+      back_to: "Повернутись до статей"
+      show: "Показати статтю"
+      edit: "Змінити статтю"
+      destroy: "Видалити статтю"
+      save: "Зберегти статтю"
   datetime:
     distance_in_words:
       x_days:
@@ -25,3 +42,7 @@ uk:
       x_minutes:
         one: '1 хвилину тому'
         other: '%{count} хвилин тому'
+      about_x_months:
+        one: '1 місяць тому'
+        other: '%{count} місяців тому'
+

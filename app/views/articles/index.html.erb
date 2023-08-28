@@ -1,14 +1,9 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Articles</h1>
 
 <div class="container" id="articles">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
     <% @articles.each do |article| %>
-      <script>
-          console.log(<%= article.to_json.html_safe %>)
-      </script>
       <%= render 'index_article', article: article %>
     <% end %>
   </div>

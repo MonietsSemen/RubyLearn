@@ -1,4 +1,4 @@
-<%= form_with(model: article) do |form| %>
+<%= form_with(model: article, class: "d-flex flex-column gap-2") do |form| %>
   <% if article.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="input-group mb-3">
+    <%= form.label :title, t('article.fields.title.label'), style: "display: block", class: "input-group-text" %>
+    <%= form.text_field :title, placeholder: t('article.fields.title.placeholder'), class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :preview_img, style: "display: block" %>
-    <%= form.file_field :preview_img %>
+  <div class="input-group mb-3">
+    <%= form.label :preview_img, t('article.fields.main_image'), style: "display: block", class: "input-group-text" %>
+    <%= form.file_field :preview_img, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.rich_text_area :content %>
+  <div class="input-group mb-3">
+    <%= form.label :content, t('article.fields.main_content.label'), class: "input-group-text" %>
+    <%= form.rich_text_area :content, placeholder: t('article.fields.main_content.placeholder') %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="input-group mb-3">
+    <%= form.submit t('article.buttons.save'), class: "btn btn-secondary" %>
   </div>
 <% end %>
